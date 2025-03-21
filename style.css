@@ -1,0 +1,613 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+                url('https://source.unsplash.com/1600x900/?technology,data') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+}
+
+/* Hero Container */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 90%;
+    color: white;
+}
+
+/* Left Side: Text */
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.hero-text h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.experience {
+    font-size: 1rem;
+    color: #ff9800;
+}
+
+/* Highlighted Name */
+.highlight {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+/* Right Side: Instructor Photo Box */
+.hero-image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.5);
+    max-width: 300px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* Timer Box */
+.timer-container {
+    
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background-color: #ff9800;
+
+    /* Centering the timer-container */
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(130%, -0%);
+}
+
+/* Timer Heading */
+#timer h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Countdown Box */
+#countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+    
+/* CTA Button */
+#cta-button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+#cta-button:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* About Boxes */
+.about-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-box {
+    background: #ff9800;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-box:hover {
+    transform: translateY(-5px);
+}
+
+.about-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Scroll Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* What You’ll Learn Section */
+#learn {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f4f4f4;
+}
+
+.learn-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.learn-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.learn-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Learning Grid */
+.learn-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Learning Cards */
+.learn-box {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.learn-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.learn-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff9800;
+}
+
+/* Why Choose Us Section */
+#why-choose {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+}
+
+.why-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.why-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.why-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.why-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Feature Boxes */
+.why-box {
+    background: #ff9800;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.why-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Testimonials Section */
+#testimonials {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f4f4f4;
+}
+
+.testimonials-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonials-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Testimonial Slider */
+.testimonial-slider {
+    position: relative;
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.testimonial {
+    display: none;
+    font-size: 1.3rem;
+    color: #444;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.testimonial.active {
+    display: block;
+}
+
+/* Buttons for Slider */
+.prev, .next {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background: #e68900;
+}
+
+/* Pricing Section */
+#pricing {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+}
+
+.pricing-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pricing-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.price-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.price-box:hover {
+    transform: translateY(-5px);
+}
+
+.recommended {
+    border: 2px solid #ff9800;
+    position: relative;
+}
+
+.badge {
+    background: #ff9800;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+.price-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.price-box li {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e68900;
+}
+
+/* FAQ Section */
+#faq {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f4f4f4;
+}
+
+.faq-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.faq-question {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-answer {
+    display: none;
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Call to Action Section */
+#cta {
+    text-align: center;
+    padding: 60px 20px;
+    background: #ff9800;
+    color: white;
+}
+
+.cta-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.btn-lg {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
+
+/* Responsive Design Enhancements */
+
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text, .hero-image-box {
+        width: 100%;
+    }
+    .hero-image-box {
+        margin-top: 20px;
+    }
+    .timer-container{
+        top: 50%;
+        left: 50%;
+        transform: translate(50%, -0%);
+    }
+}
+
+@media (max-width: 768px) {
+    #hero {
+        padding: 40px 20px;
+    }
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    .hero-text p {
+        font-size: 1rem;
+    }
+    .about-grid, .learn-grid, .why-grid, .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-box, .learn-box, .why-box, .price-box {
+        width: 90%;
+        max-width: 350px;
+    }
+    .testimonial {
+        width: 90%;
+    }
+    .timer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 350px;
+        text-align: center;
+        padding: 20px;
+        margin: 20px auto;
+        background-color: #ff9800;
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        top: 50%;
+        left: 50%;
+        transform: translate(3%, -0%);
+    }
+    #countdown {
+        font-size: 1.5rem;
+        font-weight: bold;
+        background: white;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    .hero-text p, .about-container p, .learn-container p, .why-container p {
+        font-size: 0.9rem;
+    }
+    .btn, .btn-lg {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .timer-container {
+        display: flex;
+        width: 90%;
+        max-width: 320px;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(3%, -0%);
+    }
+    #countdown {
+        font-size: 1.2rem;
+    }
+}
